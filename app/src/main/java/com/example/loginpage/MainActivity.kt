@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         myAuth = FirebaseAuth.getInstance() //creating firebase instance
 
-        //set click action
+        //set click actions
         // TODO: Understand how can you clear the error
         binding.btnLogin.setOnClickListener {
             //get values from ets
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
 
             if (username.isBlank()) { //"", " ","     "
-//show an error "please enter a valid username"
+//show an error : "please enter a valid username"
                 binding.etUsername.error = "Please enter a valid username"
             }
             if (password.isEmpty()) {
