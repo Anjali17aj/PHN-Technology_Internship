@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         myAuth = FirebaseAuth.getInstance() //creating firebase instance
 
         //set click actions
-        // TODO: Understand how can you clear the error
+        // TODO: Understand how can you clear the error.
         binding.btnLogin.setOnClickListener {
             //get values from ets
             val username = binding.tietUsername.text.toString()
